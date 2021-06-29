@@ -287,7 +287,7 @@ function draw() {
       lives--;
       // music.bgmusic.pause();
       if (!lives) {
-        location.href = "https://shauryasrivatava.github.io/Game/gameover/";
+        location.href = "https://yashvi30.github.io/Brick-Game/gameover/";
         console.log("GAME OVER!! Try again...");
         // document.location.reload();
       } else {
