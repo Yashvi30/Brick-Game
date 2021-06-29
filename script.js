@@ -203,6 +203,14 @@ function drawScore() {
   ctx.fillStyle = "#ffff32";
   ctx.fillText("Score: " + score, 80, 35); //position score at 8,20 on the x,y axis of the canvas
 }
+//current level
+function drawLevels() {
+  var img4 = document.getElementById("levels");
+  ctx.drawImage(img4, canvas.width - 180, 15);
+  ctx.font = "20px monospace";
+  ctx.fillStyle = "#00fdfd";
+  ctx.fillText("Level: 1", canvas.width - 140, 35);
+}
 //no.of lives remaining
 function drawLives() {
   var img1 = document.getElementById("heart");
@@ -210,13 +218,6 @@ function drawLives() {
   ctx.font = "20px monospace";
   ctx.fillStyle = "#e30302";
   ctx.fillText("Lives: " + lives, canvas.width - 140, 35);
-}
-function drawLevels() {
-  var img4 = document.getElementById("levels");
-  ctx.drawImage(img4, canvas.width - 180, 15);
-  ctx.font = "20px monospace";
-  ctx.fillStyle = "#00fdfd";
-  ctx.fillText("Level: 1", canvas.width - 140, 35);
 }
 
 function collisionDetection() {
