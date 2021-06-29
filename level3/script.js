@@ -206,10 +206,10 @@ function drawScore() {
 //current level
 function drawLevels() {
   var img4 = document.getElementById("levels");
-  ctx.drawImage(img4, canvas.width - 180, 15);
+  ctx.drawImage(img4, 320, 15);
   ctx.font = "20px monospace";
   ctx.fillStyle = "#00fdfd";
-  ctx.fillText("Level: 3", canvas.width - 140, 35);
+  ctx.fillText("Level: 3", 350, 35);
 }
 
 //no.of lives remaining
@@ -272,6 +272,7 @@ function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   drawScore();
+  drawLevels();
   drawLives();
   drawBricks();
   drawBall();

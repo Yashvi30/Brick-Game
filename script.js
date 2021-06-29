@@ -49,18 +49,6 @@ let music = {
     volume: 0.5,
     autoplay: true,
   }),
-
-  // let bgmusic = {
-  //   m1: new Howl({
-  //     src: ["./sounds/bg2.mp3"],
-  //     volume: 0.5,
-  //     autoplay: true,
-  //   }),
-
-  // m2: new Howl({
-  //   src: ["https://assets.codepen.io/21542/howler-demo-bg-music.mp3"],
-  //   //  autoplay: true
-  // }),
 };
 
 //levelup
@@ -206,10 +194,10 @@ function drawScore() {
 //current level
 function drawLevels() {
   var img4 = document.getElementById("levels");
-  ctx.drawImage(img4, canvas.width - 180, 15);
+  ctx.drawImage(img4, 320, 15);
   ctx.font = "20px monospace";
   ctx.fillStyle = "#00fdfd";
-  ctx.fillText("Level: 1", canvas.width - 140, 35);
+  ctx.fillText("Level: 1", 350, 35);
 }
 //no.of lives remaining
 function drawLives() {
@@ -254,12 +242,10 @@ unmute.addEventListener("click", (e) => {
   music.bgmusic.play();
   unmute.style.display = "none";
   mute.style.display = "block";
-  console.log("fgqdq");
   // unmute.hidden = true;
   // mute.hidden = false;
   // unmute.classList.toggle("unmute");
   // }
-  console.log("guew");
 });
 //music mute unmute
 mute.addEventListener("click", (e) => {
@@ -273,6 +259,7 @@ function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   drawScore();
+  drawLevels();
   drawLives();
   drawBricks();
   drawBall();
