@@ -23,6 +23,7 @@ let brickOffsetLeft = 30;
 //Create variables to take score
 let score = 0;
 let lives = 3;
+let level = 1;
 
 // bricks colors
 let colors = ["#3E00FD", "#00FDFD", "#FFFF32", "#CEFF03", "#F82888", "#E30303"];
@@ -209,6 +210,13 @@ function drawLives() {
   ctx.font = "20px monospace";
   ctx.fillStyle = "#e30302";
   ctx.fillText("Lives: " + lives, canvas.width - 140, 35);
+}
+function drawLevels() {
+  var img4 = document.getElementById("levels");
+  ctx.drawImage(img4, canvas.width - 180, 15);
+  ctx.font = "20px monospace";
+  ctx.fillStyle = "#00fdfd";
+  ctx.fillText("Level: 1", canvas.width - 140, 35);
 }
 
 function collisionDetection() {
