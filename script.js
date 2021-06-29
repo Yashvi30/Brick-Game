@@ -288,7 +288,7 @@ function draw() {
       // music.bgmusic.pause();
       if (!lives) {
         location.href = "https://yashvi30.github.io/Brick-Game/gameover/";
-        console.log("GAME OVER!! Try again...");
+        // console.log("GAME OVER!! Try again...");
         // document.location.reload();
       } else {
         music.lift_lost.play();
