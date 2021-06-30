@@ -102,7 +102,7 @@ function myFunction(lives) {
     x.className = x.className.replace("show", "");
   }, 3000);
 }
-
+//congratulations toast
 function myFunction1() {
   // Get the snackbar DIV
   var x = document.getElementById("snackbar");
@@ -116,42 +116,6 @@ function myFunction1() {
     x.className = x.className.replace("show", "");
   }, 3000);
 }
-// var paused = false;
-// //pause game
-// window.addEventListener("keydown", pauseGameKeyHandler, false);
-
-// function pauseGameKeyHandler(e) {
-//   var keyCode = e.keyCode;
-//   switch (keyCode) {
-//     case 80: //p
-//       togglePause();
-//       break;
-//   }
-// }
-
-// function togglePause() {
-//   paused = !paused;
-//   draw();
-// }
-
-// // CREATE THE PADDLE
-// const paddle = {
-//   m : canvas.width/2 - paddleWidth/2,
-//   n : canvas.height - paddleHeight,
-//   width : paddleWidth,
-//   height : paddleHeight,
-//   dx :5
-// }
-
-// // CREATE THE BALL
-// const ball = {
-//   m : canvas.width/2,
-//   n : paddle.y - ballRadius,
-//   radius : ballRadius,
-//   speed : 4,
-//   dx : 3 * (Math.random() * 2 - 1),
-//   dy : -3
-// }
 
 function drawBall() {
   ctx.beginPath();
@@ -257,6 +221,7 @@ function collisionDetection() {
 unmute.addEventListener("click", (e) => {
   // if (!music.bgmusic.playing()) {
   music.bgmusic.play();
+  music.bgmusic.loop = true;
   unmute.style.display = "none";
   mute.style.display = "block";
   // unmute.hidden = true;

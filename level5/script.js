@@ -128,43 +128,6 @@ function myFunction1() {
   }, 3000);
 }
 
-// var paused = false;
-// //pause game
-// window.addEventListener("keydown", pauseGameKeyHandler, false);
-
-// function pauseGameKeyHandler(e) {
-//   var keyCode = e.keyCode;
-//   switch (keyCode) {
-//     case 80: //p
-//       togglePause();
-//       break;
-//   }
-// }
-
-// function togglePause() {
-//   paused = !paused;
-//   draw();
-// }
-
-// // CREATE THE PADDLE
-// const paddle = {
-//   m : canvas.width/2 - paddleWidth/2,
-//   n : canvas.height - paddleHeight,
-//   width : paddleWidth,
-//   height : paddleHeight,
-//   dx :5
-// }
-
-// // CREATE THE BALL
-// const ball = {
-//   m : canvas.width/2,
-//   n : paddle.y - ballRadius,
-//   radius : ballRadius,
-//   speed : 4,
-//   dx : 3 * (Math.random() * 2 - 1),
-//   dy : -3
-// }
-
 function drawBall() {
   ctx.beginPath();
   ctx.arc(x, y, ballRadius, 0, Math.PI * 2); //centered at (x,y) position with radius r = ballRadius starting at 0 = startAngle, ending at Math.PI*2 = endAngle (in Radians)
@@ -220,10 +183,10 @@ function drawScore() {
 //current level
 function drawLevels() {
   var img4 = document.getElementById("levels");
-  ctx.drawImage(img4, 320, 15);
+  ctx.drawImage(img4, 330, 15);
   ctx.font = "20px monospace";
   ctx.fillStyle = "#00fdfd";
-  ctx.fillText("Level: 2", 350, 35);
+  ctx.fillText("Level: 5", 360, 35);
 }
 
 //no.of lives remaining

@@ -4,8 +4,8 @@ let ctx = canvas.getContext("2d");
 let ballRadius = 10;
 let x = canvas.width / 2;
 let y = canvas.height - 10;
-let dx = 2;
-let dy = -2;
+let dx = 4;
+let dy = -3;
 //create the paddle
 let paddleHeight = 12;
 let paddleWidth = 72;
