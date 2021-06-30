@@ -245,7 +245,7 @@ function collisionDetection() {
             // alert("Congratulations!! You've won!");
             setTimeout(function () {
               location.href = "https://yashvi30.github.io/Brick-Game/level2/";
-            }, 5);
+            }, 30);
             // brickColumnCount += 7;
           }
         }

@@ -113,6 +113,19 @@ function myFunction(lives) {
     x.className = x.className.replace("show", "");
   }, 3000);
 }
+function myFunction1() {
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar");
+
+  // Add the "show" class to DIV
+  x.className = "show";
+  x.innerText = `Congratulations! You Won 
+  Level 2`;
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function () {
+    x.className = x.className.replace("show", "");
+  }, 3000);
+}
 
 // var paused = false;
 // //pause game
@@ -240,8 +253,10 @@ function collisionDetection() {
           score++;
           if (score === brickRowCount * brickColumnCount) {
             // music.bgmusic.stop();
-            alert("Congratulations!! You've won!");
-            location.href = "https://yashvi30.github.io/Brick-Game/level2/";
+            // alert("Congratulations!! You've won!");
+            setTimeout(function () {
+              location.href = "https://yashvi30.github.io/Brick-Game/level3/";
+            }, 30);
             // brickColumnCount += 7;
           }
         }
