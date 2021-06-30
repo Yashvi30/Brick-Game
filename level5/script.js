@@ -183,10 +183,10 @@ function drawScore() {
 //current level
 function drawLevels() {
   var img4 = document.getElementById("levels");
-  ctx.drawImage(img4, 330, 15);
+  ctx.drawImage(img4, 340, 15);
   ctx.font = "20px monospace";
   ctx.fillStyle = "#00fdfd";
-  ctx.fillText("Level: 5", 360, 35);
+  ctx.fillText("Level: 5", 370, 35);
 }
 
 //no.of lives remaining
