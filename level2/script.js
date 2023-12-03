@@ -25,7 +25,7 @@ let score = 0;
 let lives = 3;
 
 // bricks colors
-let colors = ["#3E00FD", "#00FDFD", "#FFFF32", "#CEFF03", "#F82888", "#E30303"];
+let colors = ["#3E00FD", "#00FDFD", "#FFFF31", "#CEFF03", "#F82888", "#E30303"];
 
 // sounds
 let unmute = document.querySelector("#unmute");
